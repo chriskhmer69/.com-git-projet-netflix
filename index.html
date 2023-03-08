@@ -1,72 +1,219 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- 
-      This is an HTML comment
-      You can write text in a comment and the content won't be visible in the page
-    -->
-
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" href="https://glitch.com/favicon.ico" />
-
-    <!--
-      This is the page head - it contains info the browser uses
-      Like the title, which appears on the browser tab but not inside the page
-      Further down you'll see the content that displays in the page
-    -->
-    <title>Hello World!</title>
-
-    <!-- The website stylesheet -->
-    <link rel="stylesheet" href="/style.css" />
-
-    <!-- The website JavaScript file -->
-    <script src="/script.js" defer></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix Clone</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!--
-      The body includes the content you see in the page
-      Each element is defined using tags, like this <div></div>
-      The attributes like class="wrapper" let us style elements in the CSS
-    -->
-    <div class="wrapper">
-      <div class="content" role="main">
-        <h1 class="title">Hello World!</h1>
-        <img
-          src="https://cdn.glitch.com/a9975ea6-8949-4bab-addb-8a95021dc2da%2Fillustration.svg?v=1618177344016"
-          class="illustration"
-          alt="Editor illustration"
-          title="Click the image!"
-        />
-        <div class="instructions">
-          <h2>Using this project</h2>
-          <p>
-            This is the Glitch <strong>Hello Website</strong> project. You can
-            use it to build your own site. Check out the code in the editor and open
-            the <span class="fileopener" data-file="TODO.md" data-line="0"
-              >TODO</span> for next steps!
-          </p>
-          <!--  🚧 TODO: ADD BUTTON HERE -->
+    <!-- nav -->
+    <div id="nav" class="nav">
+      <img class="nav__logo" src="images/netflix-logo.png" alt="" />
+      <img class="nav__avatar" src="images/netflix-avatar.png" alt="" />
+    </div>
 
-          <!-- Once you've added the button from TODO.md, click it in the page -->
-          <!-- Check out the function in script.js to see how it works -->
+    <!-- header -->
+    <header class="banner">
+      <div class="banner__contents">
+        <h1 class="banner__title">Money Heist</h1>
+        <div class="banner__buttons">
+          <button class="banner__button">Play</button>
+          <button class="banner__button">My List</button>
         </div>
+        <h1 class="banner__description">
+        film a la une 
+        </h1>
+      </div>
+      <div class="banner--fadeBottom"></div>
+    </header>
+
+    <!-- Netflix Originals -->
+    <div class="row">
+      <h2>NETFLIX ORIGINALS</h2>
+      <div class="row__posters">
+        <img class="row__poster row__posterLarge" src="https://cdn.glitch.global/a31dcb4e-4d62-41ff-8d28-0bd3d1496604/small-movie4.jpg?v=1678267682272" alt="" />
+
+        <img class="row__poster row__posterLarge" src="https://cdn.glitch.global/a31dcb4e-4d62-41ff-8d28-0bd3d1496604/boxshot.png?v=1678267700460" alt="" />
+
+        <img class="row__poster row__posterLarge" src="https://cdn.glitch.global/a31dcb4e-4d62-41ff-8d28-0bd3d1496604/kids.png?v=1678267696244" alt="" />
+
+        <img class="row__poster row__posterLarge" src="https://cdn.glitch.global/a31dcb4e-4d62-41ff-8d28-0bd3d1496604/boxshot.png?v=1678267700460" alt="" />
+
+        <img class="row__poster row__posterLarge" src="images/large-movie5.jpg" alt="" />
+
+        <img class="row__poster row__posterLarge" src="images/large-movie6.jpg" alt="" />
+
+        <img class="row__poster row__posterLarge" src="images/large-movie7.jpg" alt="" />
+
+        <img class="row__poster row__posterLarge" src="images/large-movie8.jpg" alt="" />
       </div>
     </div>
-    <!-- The footer holds our remix button — you can keep or delete it ✂ -->
-    <footer class="footer">
-      <div class="links"></div>
-      <a
-        class="btn--remix"
-        target="_top"
-        href="https://glitch.com/edit/#!/remix/glitch-hello-website"
-      >
-        <img
-          src="https://cdn.glitch.com/605e2a51-d45f-4d87-a285-9410ad350515%2FLogo_Color.svg?v=1618199565140"
-          alt=""
-        />
-        Remix on Glitch
-      </a>
-    </footer>
+
+    <!-- Trending Now -->
+    <div class="row">
+      <h2>Trending Now</h2>
+      <div class="row__posters">
+        <img class="row__poster" src="images/small-movie1.jpg" alt="" />
+
+        <img class="row__poster" src="images/small-movie2.jpg" alt="" />
+
+        <img class="row__poster" src="images/small-movie3.jpg" alt="" />
+
+        <img class="row__poster" src="images/small-movie4.jpg" alt="" />
+
+        <img class="row__poster" src="images/small-movie5.jpg" alt="" />
+
+        <img class="row__poster" src="images/small-movie6.jpg" alt="" />
+
+        <img class="row__poster" src="images/small-movie7.jpg" alt="" />
+
+        <img class="row__poster" src="images/small-movie8.jpg" alt="" />
+      </div>
+    </div>
+
+    <!-- Top Rated -->
+    <div class="row">
+      <h2>Top Rated</h2>
+      <div class="row__posters">
+        <img class="row__poster" src="images/small-movie1.jpg" alt="" />
+
+        <img class="row__poster" src="images/small-movie2.jpg" alt="" />
+
+        <img class="row__poster" src="images/small-movie3.jpg" alt="" />
+
+        <img class="row__poster" src="images/small-movie4.jpg" alt="" />
+
+        <img class="row__poster" src="images/small-movie5.jpg" alt="" />
+
+        <img class="row__poster" src="images/small-movie6.jpg" alt="" />
+
+        <img class="row__poster" src="images/small-movie7.jpg" alt="" />
+
+        <img class="row__poster" src="images/small-movie8.jpg" alt="" />
+      </div>
+    </div>
+
+    <!-- Action Movies -->
+    <div class="row">
+      <h2>Action Movies</h2>
+      <div class="row__posters">
+        <img class="row__poster" src="images/small-movie1.jpg" alt="" />
+
+        <img class="row__poster" src="images/small-movie2.jpg" alt="" />
+
+        <img class="row__poster" src="images/small-movie3.jpg" alt="" />
+
+        <img class="row__poster" src="images/small-movie4.jpg" alt="" />
+
+        <img class="row__poster" src="images/small-movie5.jpg" alt="" />
+
+        <img class="row__poster" src="images/small-movie6.jpg" alt="" />
+
+        <img class="row__poster" src="images/small-movie7.jpg" alt="" />
+
+        <img class="row__poster" src="images/small-movie8.jpg" alt="" />
+      </div>
+    </div>
+
+    <!-- Comedy Movies -->
+    <div class="row">
+      <h2>Comedy Movies</h2>
+      <div class="row__posters">
+        <img class="row__poster" src="images/small-movie1.jpg" alt="" />
+
+        <img class="row__poster" src="images/small-movie2.jpg" alt="" />
+
+        <img class="row__poster" src="images/small-movie3.jpg" alt="" />
+
+        <img class="row__poster" src="images/small-movie4.jpg" alt="" />
+
+        <img class="row__poster" src="images/small-movie5.jpg" alt="" />
+
+        <img class="row__poster" src="images/small-movie6.jpg" alt="" />
+
+        <img class="row__poster" src="images/small-movie7.jpg" alt="" />
+
+        <img class="row__poster" src="images/small-movie8.jpg" alt="" />
+      </div>
+    </div>
+
+    <!-- Horror Movies -->
+    <div class="row">
+      <h2>Horror Movies</h2>
+      <div class="row__posters">
+        <img class="row__poster" src="images/small-movie1.jpg" alt="" />
+
+        <img class="row__poster" src="images/small-movie2.jpg" alt="" />
+
+        <img class="row__poster" src="images/small-movie3.jpg" alt="" />
+
+        <img class="row__poster" src="images/small-movie4.jpg" alt="" />
+
+        <img class="row__poster" src="images/small-movie5.jpg" alt="" />
+
+        <img class="row__poster" src="images/small-movie6.jpg" alt="" />
+
+        <img class="row__poster" src="images/small-movie7.jpg" alt="" />
+
+        <img class="row__poster" src="images/small-movie8.jpg" alt="" />
+      </div>
+    </div>
+
+    <!-- Romance Movies -->
+    <div class="row">
+      <h2>Romance Movies</h2>
+      <div class="row__posters">
+        <img class="row__poster" src="images/small-movie1.jpg" alt="" />
+
+        <img class="row__poster" src="images/small-movie2.jpg" alt="" />
+
+        <img class="row__poster" src="images/small-movie3.jpg" alt="" />
+
+        <img class="row__poster" src="images/small-movie4.jpg" alt="" />
+
+        <img class="row__poster" src="images/small-movie5.jpg" alt="" />
+
+        <img class="row__poster" src="images/small-movie6.jpg" alt="" />
+
+        <img class="row__poster" src="images/small-movie7.jpg" alt="" />
+
+        <img class="row__poster" src="images/small-movie8.jpg" alt="" />
+      </div>
+    </div>
+
+    <!-- Documentaries -->
+    <div class="row">
+      <h2>Documentaries</h2>
+      <div class="row__posters">
+        <img class="row__poster" src="images/small-movie1.jpg" alt="" />
+
+        <img class="row__poster" src="images/small-movie2.jpg" alt="" />
+
+        <img class="row__poster" src="images/small-movie3.jpg" alt="" />
+
+        <img class="row__poster" src="images/small-movie4.jpg" alt="" />
+
+        <img class="row__poster" src="images/small-movie5.jpg" alt="" />
+
+        <img class="row__poster" src="images/small-movie6.jpg" alt="" />
+
+        <img class="row__poster" src="images/small-movie7.jpg" alt="" />
+
+        <img class="row__poster" src="images/small-movie8.jpg" alt="" />
+      </div>
+    </div>
+
+    <script>
+      const nav = document.getElementById('nav');
+      window.addEventListener('scroll', () => {
+        if (window.scrollY >= 100) {
+          nav.classList.add('nav__black');
+        } else {
+          nav.classList.remove('nav__black');
+        }
+      });
+    </script>
   </body>
 </html>
